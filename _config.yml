@@ -24,12 +24,29 @@ description: >- # this means to ignore newlines until "baseurl:"
   A scramble of thoughts. Heck. Probably not even that.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "svc-user.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+# twitter_username: 
 github_username:  svc-user
+# linkedin_id: "<linkedin_id>"
+# facebook_username: "<facebook_username>"
 
-# Build settings
-remote_theme: luxedo/jekyll-theme-potato-hacker
-# theme: minima
+# Theme
+theme: jekyll-theme-potato-hacker                 # Uncomment this
+# remote_theme: luxedo/jekyll-theme-potato-hacker   # Or this
+# theme_repository: "https://github.com/luxedo/jekyll-theme-potato-hacker"
+theme_base: "dark"       # Theme palette (light | dark)
+theme_switch: on         # Show color switch (on | off)
+
+
+# Extra settings
+blog: on                 # Show blog tag and post list (on | off)
+avatar: off               # Show avatar (on | off)
+avatar_image: "assets/img/avatar.jpg"
+avatar_description: "Developer by day, hacker by night."
+highlighter_theme: monokai  # Theme of the syntax_highlighter [base16 |
+                            # colorful | github | gruvbox | molokai |
+                            # monokai | pastie | thankful_eyes | tulip ]
+
+
 plugins:
   - jekyll-feed
 
